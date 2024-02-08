@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>36.0.0</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.cplab</groupId>
+    <artifactId>JStripe</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+
+    <name>SPIM Stripes</name>
+    <description>Jstripe.</description>
+    <url>None</url>
+    <inceptionYear>2024</inceptionYear>
+    <organization>
+        <name>CPLab</name>
+        <url>None</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>GNU General Public License v2+</name>
+            <url>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <!-- See https://imagej.net/Team -->
+        <developer>
+            <name>None</name>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>None</name>
+        </contributor>
+    </contributors>
+
+    <mailingLists>
+        <mailingList>
+            <name>None</name>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <connection>scm:git:https://github.com/imagej/example-imagej2-command</connection>
+<!--        <developerConnection>scm:git:git@github.com:imagej/example-imagej2-command</developerConnection>-->
+<!--        <tag>HEAD</tag>-->
+<!--        <url>https://github.com/imagej/example-imagej2-command</url>-->
+    </scm>
+    <issueManagement>
+<!--        <system>GitHub Issues</system>-->
+<!--        <url>https://github.com/PreibischLab/BigStitcher/issues</url>-->
+        <system>None</system>
+    </issueManagement>
+    <ciManagement>
+<!--        <system>GitHub Actions</system>-->
+<!--        <url>https://github.com/PreibischLab/BigStitcher/actions</url>-->
+        <system>None</system>
+    </ciManagement>
+
+    <properties>
+        <package-name>com.cplab.jstripe</package-name>
+        <main-class>com.cplab.jstripe.DeStripe</main-class>
+        <license.licenseName>gpl_v2</license.licenseName>
+        <license.copyrightOwners>CPL Lab.</license.copyrightOwners>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>scijava.public</id>
+            <url>https://maven.scijava.org/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>imagej.public</id>
+            <url>https://maven.scijava.org/content/groups/public</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.scif</groupId>
+            <artifactId>scifio-jai-imageio</artifactId>
+        </dependency>
+        <!-- ImageJ dependencies -->
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej-common</artifactId>
+        </dependency>
+
+        <!-- ImgLib2 dependencies -->
+        <dependency>
+            <groupId>net.imglib2</groupId>
+            <artifactId>imglib2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.imglib2</groupId>
+            <artifactId>imglib2-cache</artifactId>
+        </dependency>
+
+        <!-- SciJava dependencies -->
+        <dependency>
+            <groupId>org.scijava</groupId>
+            <artifactId>scijava-common</artifactId>
+        </dependency>
+
+        <!-- OME dependencies -->
+        <dependency>
+            <groupId>ome</groupId>
+            <artifactId>formats-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ome</groupId>
+            <artifactId>formats-gpl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openmicroscopy</groupId>
+            <artifactId>ome-xml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openmicroscopy</groupId>
+            <artifactId>ome-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.scif</groupId>
+            <artifactId>scifio</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.scif</groupId>
+            <artifactId>scifio-bf-compat</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>ome</groupId>
+            <artifactId>bio-formats_plugins</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.scif</groupId>
+            <artifactId>scifio-ome-xml</artifactId>
+        </dependency>
+    </dependencies>
+</project>
